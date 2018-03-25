@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/layout_foto"
+    android:background="@drawable/background_verde"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagen_foto"
+                android:layout_width="match_parent"
+                android:layout_height="333dp"
+                android:padding="16dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btnElegirImagen"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_boton_blanco"
+                    android:clickable="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Elegir Imagen"
+                    android:textAllCaps="false"
+                    android:textColor="#8A084B"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnCrearPefil"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_boton_blanco"
+                    android:text="Crear Perfil"
+                    android:textAllCaps="false"
+                    android:textColor="#8A084B"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

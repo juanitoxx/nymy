@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nimy.nimy.LeerCodigoQR"
+    android:background="@drawable/gradiente_foto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtcorreo_electronico_encontrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_correo"
+            android:drawablePadding="2dp"
+            android:textSize="19dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtnombredueño_encontrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_usuario"
+            android:drawablePadding="2dp"
+            android:textSize="19dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtnumerotelefonico_encontrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_telefono"
+            android:drawablePadding="2dp"
+            android:textSize="19dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtdireccion_encontrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_direccion"
+            android:drawablePadding="2dp"
+            android:textSize="19dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtnombremascota_encontrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_raza"
+            android:drawablePadding="2dp"
+            android:textSize="19dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtcolorcaracteristico_encontrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_color"
+            android:drawablePadding="2dp"
+            android:textSize="19dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <Button
+            android:id="@+id/btnActualizarUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_boton_blanco"
+            android:text="Actualizar Ubicacion"
+            android:textColor="#2ECCFA"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:clickable="true"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

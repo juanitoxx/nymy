@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_verde"
+    android:id="@+id/linearLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="2dp"
+                android:src="@drawable/i_registrar" />
+
+            <EditText
+                android:id="@+id/txtnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/i_nombre"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Ingrese nombre"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#85929E"
+                android:inputType="textCapSentences"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <EditText
+                android:id="@+id/fecha_nacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:focusable="false"
+                android:clickable="true"
+                android:padding="8dp"
+                android:hint="Ingresar fecha de nacimiento"
+                android:drawableLeft="@drawable/i_calendar"
+                android:drawablePadding="12dp"
+                android:textColorHint="#85929E"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de mascota: "
+                    android:padding="8dp"
+                    android:drawablePadding="12dp"
+                    android:drawableLeft="@drawable/i_tipo"
+                    android:textColor="#85929E"
+                    android:textSize="16dp"/>
+
+                <Spinner
+                    android:id="@+id/SpTipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:entries="@array/tipo"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raza de mascota: "
+                    android:padding="8dp"
+                    android:drawablePadding="12dp"
+                    android:drawableLeft="@drawable/i_raza"
+                    android:textColor="#85929E"
+                    android:textSize="16dp"/>
+
+                <Spinner
+                    android:id="@+id/SpRaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:entries="@array/raza"/>
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Color de mascota: "
+                    android:padding="8dp"
+                    android:drawablePadding="12dp"
+                    android:drawableLeft="@drawable/i_color"
+                    android:textColor="#85929E"
+                    android:textSize="16dp"/>
+
+                <Spinner
+                    android:id="@+id/txtcolor_mascota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:entries="@array/color"/>
+                />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hembra"
+                    android:id="@+id/rdHembra"
+                    android:drawableRight="@drawable/i_mujer"
+                    android:ems="10"
+                    android:drawablePadding="12dp"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="#85929E" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Macho"
+                    android:id="@+id/rdMacho"
+                    android:drawableRight="@drawable/i_hombre"
+                    android:ems="10"
+                    android:drawablePadding="12dp"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="#85929E" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_boton_blanco"
+                android:text="Siguiente"
+                android:textColor="#1F618D"
+                android:textAllCaps="false"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

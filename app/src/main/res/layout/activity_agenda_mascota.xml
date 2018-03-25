@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nimy.nimy.AgendaMascota"
+    android:background="@drawable/background_azul_pepas"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imagenLogo"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:padding="8dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/i_agenda_text" />
+
+            <TextView
+                android:id="@+id/txtnombremascota_actual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/i_raza"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:textSize="20dp"
+                android:textColor="#2F0B3A"
+                android:maxLines="1"
+                android:padding="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#00BFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Seleccione el tipo de evento"
+                android:textColor="#2F0B3A"
+                android:padding="8dp"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbVacuna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vacuna"
+                    android:padding="3dp"
+                    android:drawableRight="@drawable/i_vacuna"
+                    android:textColor="#2F0B3A"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbBaño"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Baño"
+                    android:drawableRight="@drawable/i_bano"
+                    android:textColor="#2F0B3A"
+                    android:textSize="18sp"
+                    android:padding="3dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbOtro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otro"
+                    android:padding="3dp"
+                    android:drawableRight="@drawable/i_otro"
+                    android:textColor="#2F0B3A"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#00BFFF" />
+
+            <EditText
+                android:id="@+id/txtevento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/i_evento"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:textColor="#2F0B3A"
+                android:hint="Ingrese Descripcion del evento"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#85929E"
+                android:inputType="textCapSentences"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#00BFFF" />
+
+            <EditText
+                android:id="@+id/fecha_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:focusable="false"
+                android:clickable="true"
+                android:padding="8dp"
+                android:hint="Ingresar fecha de Evento"
+                android:drawableLeft="@drawable/i_calendar"
+                android:drawablePadding="12dp"
+                android:textColorHint="#85929E"
+                android:maxLines="1"
+                android:textColor="#2F0B3A"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#00BFFF" />
+
+            <Button
+                android:id="@+id/btnAgregarEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_boton_blanco"
+                android:text="Registar evento"
+                android:textColor="#2ECCFA"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:clickable="true"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

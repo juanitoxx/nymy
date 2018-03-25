@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nimy.nimy.Descargar_QR"
+    android:background="@drawable/back_pastel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp">
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btncodigoQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/i_descargar"
+                app:fabSize="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagenQR"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#3B0B24"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtnombredueño"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_usuario"
+            android:drawablePadding="2dp"
+            android:textSize="23dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtnumerotelefonico"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_telefono"
+            android:drawablePadding="2dp"
+            android:textSize="23dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtnombremascota"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_raza"
+            android:drawablePadding="2dp"
+            android:textSize="23dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtcolorcaracteristico"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/i_color"
+            android:drawablePadding="2dp"
+            android:textSize="23dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <TextView
+            android:id="@+id/txtdireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/i_direccion"
+            android:drawablePadding="2dp"
+            android:textSize="23dp"
+            android:textColor="#3B0B24"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

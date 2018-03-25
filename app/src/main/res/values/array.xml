@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipo">
+        <item>Canino</item>
+        <item>Felino</item>
+    </string-array>
+
+    <string-array name="raza">
+        <item>Criollo</item>
+    </string-array>
+
+    <string-array name="color">
+        <item>Tricolor</item>
+        <item>Blanco</item>
+        <item>Negro</item>
+        <item>Marron</item>
+        <item>Chocolate</item>
+        <item>Amarillo</item>
+    </string-array>
+
+</resources>

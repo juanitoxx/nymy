@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nimy.nimy.SeleccionarEvento"
+    android:orientation="vertical"
+    android:background="@drawable/background_calendario">
+
+    <ImageView
+        android:id="@+id/imagenLogo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/i_calendario" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/calendario"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="24dp"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarTextColor="#fff"
+        app:compactCalendarBackgroundColor="#B4045F"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#AC58FA"
+        app:compactCalendarCurrentDayBackgroundColor="#8A084B"
+        app:compactCalendarMultiEventIndicatorColor="#fff"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/btnAgregarEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_boton_rosa"
+        android:text="Agregar Evento"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

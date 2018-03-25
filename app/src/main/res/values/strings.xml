@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Nimy</string>
+    <string name="back4app_server_url"> https://parseapi.back4app.com/ </string>
+    <string name="back4app_app_id">jBJh6jKCJipl2TdDTcTYt51Ftyg9jOBhfcfhubjj</string>
+    <string name="back4app_client_key">chJvmPMPKY0QDIuklkvqmAfrWgxRkBNUiy8dEmoe</string>
+
+</resources>
