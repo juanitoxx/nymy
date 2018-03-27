@@ -25,7 +25,6 @@
         <activity android:name=".Registrar" />
         <activity android:name=".TomarFoto" />
         <activity android:name=".SeleccionarMascota" />
-        <activity android:name=".pantalla_informacion" />
         <activity android:name=".LeerCodigoQR" />
 
         <meta-data
@@ -55,7 +54,11 @@
         <activity android:name=".Descargar_QR" />
         <activity android:name=".BuscarMascota" />
         <activity android:name=".AgendaMascota" />
-        <activity android:name=".SeleccionarEvento"></activity>
+        <activity android:name=".SeleccionarEvento" />
+        <activity
+            android:name=".pantalla_informacion"
+            android:label="@string/title_activity_pantalla_informacion"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

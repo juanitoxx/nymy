@@ -1,13 +1,142 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.nimy.nimy.pantalla_informacion_4">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:orientation="vertical"
+    android:background="@drawable/background_calendario"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manual de uso"
+                android:layout_marginTop="43dp"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="57dp"/>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:layout_marginRight="33dp"
+                android:text="Para que puedas saber como funciona la aplicacion debes saber la funcion de cada boton " />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="57dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btncodigoQR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:src="@drawable/i_qr"
+                        android:layout_marginLeft="33dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btnmascota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:src="@drawable/i_perro"
+                        android:layout_marginLeft="33dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btninformacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:src="@drawable/i_informacion"
+                        android:layout_marginLeft="33dp"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="13dp"
+                        android:text="Lee el codigo QR de una mascota, usa este boton para saber la ubicacion de tu mascota perdida" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="13dp"
+                        android:text="Puedes registrar, consultar y modificar información con respecto a tus mascotas "/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="13dp"
+                        android:text="Te permite consultar información acerca de la aplicación" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -3,7 +3,7 @@ package com.example.nimy.nimy;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +16,6 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link pantalla_informacion_6#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class pantalla_informacion_6 extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -30,6 +29,10 @@ public class pantalla_informacion_6 extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
+    public pantalla_informacion_6() {
+        // Required empty public constructor
+    }
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -40,23 +43,20 @@ public class pantalla_informacion_6 extends Fragment {
      */
     // TODO: Rename and change types and number of parameters
     public static pantalla_informacion_6 newInstance(String param1, String param2) {
-        pantalla_informacion_6 fragment = new pantalla_informacion_6();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+        pantalla_informacion_6 fragment = new pantalla_informacion_6 ();
+        Bundle args = new Bundle ();
+        args.putString ( ARG_PARAM1, param1 );
+        args.putString ( ARG_PARAM2, param2 );
+        fragment.setArguments ( args );
         return fragment;
-    }
-    public pantalla_informacion_6() {
-        // Required empty public constructor
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+        super.onCreate ( savedInstanceState );
+        if (getArguments () != null) {
+            mParam1 = getArguments ().getString ( ARG_PARAM1 );
+            mParam2 = getArguments ().getString ( ARG_PARAM2 );
         }
     }
 
@@ -64,30 +64,30 @@ public class pantalla_informacion_6 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pantalla_informacion_6, container, false);
+        return inflater.inflate ( R.layout.fragment_pantalla_informacion_6, container, false );
     }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.onFragmentInteraction ( uri );
         }
     }
 
     @Override
     public void onAttach(Context context) {
-        super.onAttach(context);
+        super.onAttach ( context );
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+            throw new RuntimeException ( context.toString ()
+                    + " must implement OnFragmentInteractionListener" );
         }
     }
 
     @Override
     public void onDetach() {
-        super.onDetach();
+        super.onDetach ();
         mListener = null;
     }
 

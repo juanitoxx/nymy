@@ -4,4 +4,10 @@
     <string name="back4app_app_id">jBJh6jKCJipl2TdDTcTYt51Ftyg9jOBhfcfhubjj</string>
     <string name="back4app_client_key">chJvmPMPKY0QDIuklkvqmAfrWgxRkBNUiy8dEmoe</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pantalla_informacion">pantalla_informacion</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
 </resources>

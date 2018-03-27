@@ -73,13 +73,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imagen_perfil"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
-            />
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
 
         <View
             android:layout_width="12dp"
@@ -94,8 +94,8 @@
                 android:id="@+id/txtnombre_perfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:textColor="#2F0B3A"/>
+                android:textColor="#2F0B3A"
+                android:textSize="25dp" />
 
             <View
                 android:layout_width="match_parent"
@@ -105,8 +105,8 @@
                 android:id="@+id/txtedad_perfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textColor="#2F0B3A" />
+                android:textColor="#2F0B3A"
+                android:textSize="20dp" />
 
             <View
                 android:layout_width="match_parent"
@@ -116,8 +116,8 @@
                 android:id="@+id/txtcolor_perfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textColor="#2F0B3A" />
+                android:textColor="#2F0B3A"
+                android:textSize="20dp" />
 
             <View
                 android:layout_width="match_parent"
@@ -127,8 +127,8 @@
                 android:id="@+id/txtdireccion_perfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textColor="#2F0B3A" />
+                android:textColor="#2F0B3A"
+                android:textSize="20dp" />
 
         </LinearLayout>
     </LinearLayout>
